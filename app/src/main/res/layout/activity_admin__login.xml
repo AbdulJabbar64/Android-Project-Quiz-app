@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.Admin_Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/login_font"
+        android:text="Let's Sign you in"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_margin="20sp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/login_font"
+        android:text="Welcome Back"
+        android:layout_marginLeft="20dp"
+        android:textSize="36dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/login_font"
+        android:text="You've been missed!"
+        android:layout_marginLeft="20dp"
+        android:textSize="36dp"></TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:id="@+id/admin_img"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="center"></de.hdodenhof.circleimageview.CircleImageView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/email_drawable"
+        android:id="@+id/email"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:hint="Phone, email or username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_margin="15dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/email_drawable"
+        android:id="@+id/password"
+        android:layout_marginTop="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:layout_margin="15dp"></EditText>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="130dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/email_drawable"
+        android:onClick="onSignInClick"
+        android:text="Sign In"></Button>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AddQuestion">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Android Development"
+        android:id="@+id/add_title"
+        android:textColor="@color/black"
+        android:textSize="24dp"></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Question Here"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textSize="22dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/options_drawable"
+            android:gravity="center"
+            android:hint="First Option will be displayed Here"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/white"></EditText>
+
+        <EditText
+            android:id="@+id/add_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/options_drawable"
+            android:gravity="center"
+            android:hint="Second Option will be displayed Here"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/white"></EditText>
+
+        <EditText
+            android:id="@+id/add_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/options_drawable"
+            android:gravity="center"
+            android:hint="Third Option will be displayed Here"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/white"></EditText>
+        <EditText
+            android:id="@+id/add_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/options_drawable"
+            android:gravity="center"
+            android:hint="Last Option will be displayed Here"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/white"></EditText>
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/correct_option"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/options_drawable"></Spinner>
+        <Button
+            android:id="@+id/addQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Add"></Button>
+    </LinearLayout>
+</LinearLayout>
